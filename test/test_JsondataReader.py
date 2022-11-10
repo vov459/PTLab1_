@@ -1,7 +1,7 @@
 import pytest
 from typing import Tuple
-from src.Types import DataType
-from src.JsondataReader import JsondataReader
+from Types import DataType
+from JsondataReader import JsondataReader
 
 
 class TestJsonDataReader:
