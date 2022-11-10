@@ -7,16 +7,12 @@ import argparse
 import sys
 import os
 
-
-
 def get_path_from_arguments(args) -> str:
     parser = argparse.ArgumentParser(description="Path to datafile")
     parser.add_argument("-p", dest="path", type=str, required=True,
                         help="Path to datafile")
     args = parser.parse_args(args)
     return args.path
-
-
 def main():
     path = get_path_from_arguments(sys.argv[1:])
     extension = os.path.splitext(path)[1]
@@ -34,12 +30,11 @@ def main():
     rating = AvarageMark(students).calc()
 
     for i in rating:
-        if rating.get(i) ==2:
+        if rating.get(i) == 2:
             print("Student: ", i)
             break
         else:
             print("No students")
-
 
 if __name__ == "__main__":
     main()
