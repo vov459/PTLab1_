@@ -1,7 +1,7 @@
 import pytest
 from typing import Tuple
-from Types import DataType
-from JsondataReader import JsondataReader
+from src.Types import DataType
+from src.JsondataReader import JsondataReader
 
 
 class TestJsonDataReader:
@@ -24,8 +24,7 @@ class TestJsonDataReader:
         return text, data
 
     @pytest.fixture()
-    def filepath_and_data(self, file_and_data_content:
-    Tuple[str, DataType],
+    def filepath_and_data(self, file_and_data_content: Tuple[str, DataType],
                           tmpdir) -> Tuple[str, DataType]:
         p = tmpdir.mkdir("datadir").join("my_data.json")
         p.write_text(file_and_data_content[0], encoding='utf-8')
