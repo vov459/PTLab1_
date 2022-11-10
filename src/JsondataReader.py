@@ -20,6 +20,6 @@ class JsondataReader(DataReader):
                 self.students[key] = []
                 for subject in data[key]:
                     self.students[key].append(
-                    (subject, data[key][subject]))
+                        (subject, data[key][subject]))
             print(self.students)
         return self.students
