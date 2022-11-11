@@ -1,4 +1,4 @@
-import numpy as np
+
 from typing import Dict
 from Types import DataType
 
@@ -6,7 +6,7 @@ from Types import DataType
 RatingType = Dict[str, float]
 
 
-class AvarageMark():
+class AvarageMark:
 
     def __init__(self, data: DataType) -> None:
         self.data: DataType = data
