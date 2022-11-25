@@ -32,3 +32,4 @@
 осуществляется с помощью библиотеки pytest. 
 
 ## UML-диаграмма классов
+![image](https://github.com/vov459/PTLab1_/blob/main/UML.jpg?raw=true) 
