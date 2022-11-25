@@ -8,7 +8,6 @@ RatingType = Dict[str, float]
 
 class AvarageMark:
 
-
     def __init__(self, data: DataType) -> None:
         self.data: DataType = data
         self.rating: RatingType = {}
